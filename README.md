@@ -39,6 +39,7 @@ The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatia
 - **_simu.O_**: a list with 100 simulated counts data sets
 
 
+# R code
 
 
 R code to fit the spatio-temporal models described in the paper has been included [here](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R).
@@ -55,6 +56,6 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 ![image](https://github.com/spatialstatisticsupna/Comparing-R-INLA-and-NIMBLE/blob/main/micin-aei.jpg)
  
 # References
-[Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Space-time interactions in Bayesian disease mapping with recent tools: making things easier for practitioners. _Statistical Methods in Medical Research (online first)_. DOI: 10.1177/09622802221079351](https://journals.sagepub.com/doi/10.1177/09622802221079351)
+
 	 
 
