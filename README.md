@@ -68,9 +68,10 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
 R code to implement the procedures to alleviate spatial confounding described in the paper and reproduce the tables and figures of the paper has been included. 
 
-- [R/Real_data_analysis](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) contains the R code used in the real data analysis. The R code for dowry death data is presented, slight modifications included in the code as a comments should be done to fit the models to Slovenia and Scotland datasets.
+- [R/Real_data_analysis](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) folder contains the R code used in the real data analysis. The R code for dowry death data is presented, slight modifications included in the code as a comments should be done to fit the models to Slovenia and Scotland datasets.
 -   
-- [run](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/run) folder contains the Rscripts to run these models.
+- [R/Simulation_Study_1](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_1) folder contains the R code used in Simulation Study 1. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=0.80,0.50 or 0.20) must be defined. It is important to run [Prepare_results_TGMRF.R](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/R/Simulation_study_1/Prepare_results_TGMRF.R) script before running the scripts to obtain the tables and figures. 
+- 
 - [tables_figures_paper.R](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/tables_figures_paper.R) contains the necessary functions to reproduce all the figures and tables of Spanish breast cancer mortality data analysis.
 
 Computations were run using R-4.0.3, INLA version 21.02.23 and NIMBLE version 0.11.1.
