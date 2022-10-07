@@ -39,7 +39,7 @@ The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spati
   - **_Q.xi_**: spatial adjacency matrix
   - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
   
-_**Note:** Slovenia data is obtained from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO)_
+_Slovenia data is obtained from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO)_
 
 
 ### Lip cancer incidence data in Scotland during 1975-1980
@@ -74,7 +74,7 @@ R code to implement the procedures to alleviate spatial confounding described in
 
 - [R/Simulation_Study_2](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_2) folder contains the R code used in Simulation Study 2. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=0.80,0.50 or 0.20) at the top of the code must be defined.  It is important to run [Prepare_results_TGMRF.R](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/R/Simulation_study_2/Prepare_results_TGMRF.R) script before running the scripts to obtain the tables and figures. 
 
-Computations were run using R-4.0.3, INLA version 21.02.23 and NIMBLE version 0.11.1.
+Computations were run using R-4.0.4, INLA version 21.02.23, mgcv version 1.8-40 and TMGMRF version 0.12.2.
 
 # Acknowledgements
 This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.13039/501100011033.
