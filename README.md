@@ -58,7 +58,7 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
 
 # Simulated data
-[Simulated_data](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/Simulated_data) folder contains a total of 18 .Rdata files (one file for each Scenario) used in Simulation Study 1 and Simulation Study 2. Each .Rdata file contains the same objects as [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) (**_Data_**, **_carto_**, **_Q.xi_**, **_Q.xi.TGMRF_**) but simulated covariate **_X2_** is added to **_Data_**. Moreover, each .Rdata contains the following objects as well:
+[Simulated_data](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/Simulated_data) folder contains a total of 18 .Rdata files (one file for each scenario and each subscenario) used in Simulation Study 1 and Simulation Study 2. Each .Rdata file contains the same objects as [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) (**_Data_**, **_carto_**, **_Q.xi_**, **_Q.xi.TGMRF_**) but simulated covariate **_X2_** is added to **_Data_**. Moreover, each .Rdata contains the following objects as well:
 
 - **_log.risk_**: a vector that contains the simulated log risks
 - **_simu.O_**: a list with 100 simulated counts data sets
