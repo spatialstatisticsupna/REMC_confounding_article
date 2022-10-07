@@ -11,14 +11,14 @@ This repository contains the R code to fit the models described in the paper ent
 
 
 # Data
-Dowry deaths data in Uttar Pradesh in 2001 (Vicente et al., 2020).
+### Dowry deaths data in Uttar Pradesh in 2001 (Vicente et al., 2020).
 
 The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
-  -- **_dist_**: Districts of Uttar Pradesh
-  -- **_O_**: number of dowry deaths in each district in 2001
-  -- **_E_**: number of expected cases of each district in 2001
-  -- **_X1_**: sex ratio (number of females per 1000 males)
+    - **_dist_**: Districts of Uttar Pradesh
+    - **_O_**: number of dowry deaths in each district in 2001
+    - **_E_**: number of expected cases of each district in 2001
+    - **_X1_**: sex ratio (number of females per 1000 males)
 
   - **_carto_**: `sf` object containing the spatial polygons of the Spanish provinces. The data contains a `data.frame` with 50 rows and  _'Area'_ (character vector of geographic identifiers), _'Name'_ (character vector of province names), _'Longitude'_ (numeric vector of longitude values), _'Latitude'_ (numeric vector of latitude values) and _'geometry'_ (sfc_MULTIPOLYGON) variables.
   - **_Rs_**: adjacency matrix.
