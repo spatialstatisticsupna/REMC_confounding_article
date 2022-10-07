@@ -11,13 +11,16 @@ This repository contains the R code to fit the models described in the paper ent
 
 
 # Data
-Female breast cancer mortality data (ICD-10 code 50) in Spanish provinces during the period 1990-2010.
+Dowry deaths data in Uttar Pradesh in 2001 (Vicente et al., 2020).
 
-- [**BreastCancer_data.Rdata**](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/BreastCancer_data.Rdata)
-  
-  This .Rdata contains the following objects
-  - **_Data_**: `data.frame` object with the number of observed and expected cases (_'Counts'_ and _'Expected'_ variables, respectively) for each province (_'Area'_) and time period (_'Year'_) for female breast cancer mortality data.
-  - **_Carto_ESP_**: `sf` object containing the spatial polygons of the Spanish provinces. The data contains a `data.frame` with 50 rows and  _'Area'_ (character vector of geographic identifiers), _'Name'_ (character vector of province names), _'Longitude'_ (numeric vector of longitude values), _'Latitude'_ (numeric vector of latitude values) and _'geometry'_ (sfc_MULTIPOLYGON) variables.
+The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
+  - **_Data_**: contains the data set used. It is a dataframe with the following variables:
+  -- **_dist_**: Districts of Uttar Pradesh
+  -- **_O_**: number of dowry deaths in each district in 2001
+  -- **_E_**: number of expected cases of each district in 2001
+  -- **_X1_**: sex ratio (number of females per 1000 males)
+
+  - **_carto_**: `sf` object containing the spatial polygons of the Spanish provinces. The data contains a `data.frame` with 50 rows and  _'Area'_ (character vector of geographic identifiers), _'Name'_ (character vector of province names), _'Longitude'_ (numeric vector of longitude values), _'Latitude'_ (numeric vector of latitude values) and _'geometry'_ (sfc_MULTIPOLYGON) variables.
   - **_Rs_**: adjacency matrix.
 	
 
