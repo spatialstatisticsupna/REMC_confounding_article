@@ -15,7 +15,8 @@ This repository contains the R code to fit the models described in the paper ent
 
 The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
-    - **_dist_**: districts of Uttar Pradesh
+    - **_dist_**: names of the districts of Uttar Pradesh
+    - **_ID.area_**: number reference of each district of Uttar Pradesh
     - **_O_**: number of dowry deaths in each district in 2001
     - **_E_**: number of expected cases of each district in 2001
     - **_X1_**: sex ratio covariate (number of females per 1000 males)
@@ -24,8 +25,14 @@ The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatia
   - **_Q.xi_**: adjacency matrix
   - **_Q.xi.TGMRF_**: adjacency matrix for _tgmrf()_ function of TMGMRF package
 	
+### Lip cancer incidence data in Scotland during 1975-1980 (Breslow and Clayton, 1993).
 
-# R code
+
+### Stomach cancer incidence data in Slovenia during the period 1995-2001. (Reich et al., 2006; Hodges and Reich, 2010).
+
+
+
+# Simulated data
 R code to fit the spatio-temporal models described in the paper has been included [here](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R).
 Only models for the set of hyperprior distributions H1 are shown (to fit the models with H2 and H3 hyperprior distributions slight modifications are required in the code). 
 - [icar_models](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/icar_models) and [bym_models](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/bym_models) folders contain the Rscripts with the spatio-temporal models fitted with ICAR and BYM spatial priors using R-INLA, Nimble 1 and Nimble 2. 
