@@ -11,24 +11,52 @@ This repository contains the R code to fit the models described in the paper ent
 
 
 # Data
-### Dowry deaths data in Uttar Pradesh in 2001 (Vicente et al., 2020).
+### Dowry deaths data in Uttar Pradesh in 2001
 
 The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
     - **_dist_**: names of the districts of Uttar Pradesh
-    - **_ID.area_**: number reference of each district of Uttar Pradesh
+    - **_ID.area_**: numeric vector of district identifiers
+    - **_O_**: number of dowry deaths in each district in 2001
+    - **_E_**: number of expected cases of each district in 2001
+    - **_X1_**: standardized sex ratio covariate (number of females per 1000 males)
+
+  - **_carto_**: SpatialPolygonDataFrame object with the cartography of the 70 districts (year 2001) of Uttar Pradesh
+  - **_Q.xi_**: spatial adjacency matrix
+  - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
+
+
+### Stomach cancer incidence data in Slovenia during the period 1995-2001
+
+The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Slovenia_stomach_cancer.Rdata) file contains the following objects:
+  - **_Data_**: contains the data set used. It is a dataframe with the following variables:
+    - **_ID.area_**: numeric vector of area identifiers
+    - **_O_**: number of stomach cancer cases in each area during 1995-2001
+    - **_E_**: number of expected cases in each area during 1995-2001
+    - **_X_**: standardized socioeconomic indicator
+    
+  - **_coord_**: a matrix that contains the coordinates of the 192 areas of Slovenia
+  - **_Q.xi_**: spatial adjacency matrix
+  - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
+  
+
+
+
+### Lip cancer incidence data in Scotland during 1975-1980
+
+The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
+  - **_Data_**: contains the data set used. It is a dataframe with the following variables:
+    - **_dist_**: names of the districts of Uttar Pradesh
+    - **_ID.area_**: numeric vector of district identifiers
     - **_O_**: number of dowry deaths in each district in 2001
     - **_E_**: number of expected cases of each district in 2001
     - **_X1_**: sex ratio covariate (number of females per 1000 males)
 
   - **_carto_**: SpatialPolygonDataFrame object with the cartography of the 70 districts (year 2001) of Uttar Pradesh
-  - **_Q.xi_**: adjacency matrix
-  - **_Q.xi.TGMRF_**: adjacency matrix for _tgmrf()_ function of TMGMRF package
-	
-### Lip cancer incidence data in Scotland during 1975-1980 (Breslow and Clayton, 1993).
+  - **_Q.xi_**: spatial adjacency matrix
+  - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
 
 
-### Stomach cancer incidence data in Slovenia during the period 1995-2001. (Reich et al., 2006; Hodges and Reich, 2010).
 
 
 
