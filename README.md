@@ -39,7 +39,7 @@ The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spati
   - **_Q.xi_**: spatial adjacency matrix
   - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
   
-
+_**Note:** Slovenia data is obtained from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO)_
 
 
 ### Lip cancer incidence data in Scotland during 1975-1980
