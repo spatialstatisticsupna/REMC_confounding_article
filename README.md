@@ -66,9 +66,10 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
 # R code
 
-R code to fit the models to alleviate spatial confounding described in the paper and reproduce the tables and figures presented in the paper has been included. 
+R code to implement the procedures to alleviate spatial confounding described in the paper and reproduce the tables and figures of the paper has been included. 
 
-- [Real_data_analysis](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/icar_models) and [bym_models](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/bym_models) folders contain the Rscripts with the spatio-temporal models fitted with ICAR and BYM spatial priors using R-INLA, Nimble 1 and Nimble 2. 
+- [R/Real_data_analysis](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) contains the R code used in the real data analysis. The R code for dowry death data is presented, slight modifications included in the code as a comments should be done to fit the models to Slovenia and Scotland datasets.
+-   
 - [run](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/run) folder contains the Rscripts to run these models.
 - [tables_figures_paper.R](https://github.com/ArantxaUrdangarin/Comparing-R-INLA-and-NIMBLE/blob/main/R/tables_figures_paper.R) contains the necessary functions to reproduce all the figures and tables of Spanish breast cancer mortality data analysis.
 
