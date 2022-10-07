@@ -30,7 +30,7 @@ The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatia
 
 The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Slovenia_stomach_cancer.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
-    - **_ID.area_**: numeric vector of area identifiers
+    - **_ID.area_**: numeric vector of district identifiers
     - **_O_**: number of stomach cancer cases in each area during 1995-2001
     - **_E_**: number of expected cases in each area during 1995-2001
     - **_X_**: standardized socioeconomic indicator
@@ -44,19 +44,16 @@ _**Note:** Slovenia data is obtained from the package RASCO of R [https://github
 
 ### Lip cancer incidence data in Scotland during 1975-1980
 
-The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
+The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Scotland_lip_cancer.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
-    - **_dist_**: names of the districts of Uttar Pradesh
     - **_ID.area_**: numeric vector of district identifiers
-    - **_O_**: number of dowry deaths in each district in 2001
-    - **_E_**: number of expected cases of each district in 2001
-    - **_X1_**: sex ratio covariate (number of females per 1000 males)
+    - **_O_**: number of lip cancer cases in each area during 1975-1980
+    - **_E_**: number of expected cases in each area during 1975-1980
+    - **_AFF_**: standardized covariate indicating the proportion of the population engaged in agriculture, fishing, or forestry
 
-  - **_carto_**: SpatialPolygonDataFrame object with the cartography of the 70 districts (year 2001) of Uttar Pradesh
+  - **_carto_**: SpatialPolygonDataFrame object with the cartography of the 56 districts of Scotland
   - **_Q.xi_**: spatial adjacency matrix
   - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
-
-
 
 
 
