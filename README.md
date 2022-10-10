@@ -1,5 +1,5 @@
 # Evaluating recent methods to overcome spatial confounding
-This repository contains the R code to fit the models described in the paper entitled "Evaluating recent methods to overcome spatial confounding"
+This repository contains the R code to implement the methods described in the paper entitled "Evaluating recent methods to overcome spatial confounding" as well as the R code to create the figures and tables presented in the paper.
 
 
 ## Table of contents
