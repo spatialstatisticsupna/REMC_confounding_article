@@ -26,8 +26,7 @@ The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatia
   - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
 
 
-### Stomach cancer incidence data in Slovenia during the period 1995-2001 [(Zadnik and Reich,
-2006)]
+### Stomach cancer incidence data in Slovenia during the period 1995-2001 [(Zadnik and Reich, 2006)]
 
 The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Slovenia_stomach_cancer.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
@@ -43,7 +42,7 @@ The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spati
 _Slovenia data is obtained from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO)_
 
 
-### Lip cancer incidence data in Scotland during 1975-1980 [Breslow and Clayton, 1993](https://www.jstor.org/stable/2290687?origin=crossref#metadata_info_tab_contents)
+### Lip cancer incidence data in Scotland during 1975-1980 [(Breslow and Clayton, 1993)](https://www.jstor.org/stable/2290687?origin=crossref#metadata_info_tab_contents)
 
 The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Scotland_lip_cancer.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
@@ -84,5 +83,11 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
  
 # References
 
-	 
+Breslow, N. E. and Clayton, D. G. (1993). Approximate inference in generalized linear mixed models. Journal of the American Statistical Association, 88(421):9–25. https://doi.org/10.2307/2290687
+
+Zadnik, V. and Reich, B. (2006). Analysis of the relationship between socioeconomic factors and stomach cancer incidence in slovenia. Neoplasma, 53(2):103-110.	 
+
+Vicente, G., Goicoa, T., Fernandez-Rasines, P., and Ugarte, M. D. (2020). Crime against women in india: unveiling spatial patterns and temporal trends of dowry deaths in the districts of Uttar Pradesh. Journal of the Royal Statistical Society: Series A (Statistics in Society), 183(2):655–679. https://doi.org/10.1111/rssa.12545
+
+
 
