@@ -30,7 +30,7 @@ The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatia
 
 The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Slovenia_stomach_cancer.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
-    - **_ID.area_**: numeric vector of district identifiers
+    - **_ID.area_**: numeric district identifiers
     - **_O_**: number of stomach cancer cases in each area during 1995-2001
     - **_E_**: number of expected cases in each area during 1995-2001
     - **_X_**: standardized socioeconomic indicator
@@ -46,7 +46,7 @@ _Slovenia data is obtained from the package RASCO of R [https://github.com/Dougl
 
 The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Scotland_lip_cancer.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
-    - **_ID.area_**: numeric vector of district identifiers
+    - **_ID.area_**: numeric district identifiers
     - **_O_**: number of lip cancer cases in each area during 1975-1980
     - **_E_**: number of expected cases in each area during 1975-1980
     - **_AFF_**: standardized covariate indicating the proportion of the population engaged in agriculture, fishing, or forestry
