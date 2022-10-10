@@ -16,7 +16,7 @@ This repository contains the R code to implement the methods described in the pa
 The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) file contains the following objects:
   - **_Data_**: contains the data set used. It is a dataframe with the following variables:
     - **_dist_**: names of the districts of Uttar Pradesh
-    - **_ID.area_**: numeric vector of district identifiers
+    - **_ID.area_**: numeric identifiers of districts
     - **_O_**: number of dowry deaths in each district in 2001
     - **_E_**: number of expected cases of each district in 2001
     - **_X1_**: standardized sex ratio covariate (number of females per 1000 males)
