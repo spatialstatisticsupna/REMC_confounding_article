@@ -85,9 +85,11 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 
 Breslow, N. E. and Clayton, D. G. (1993). Approximate inference in generalized linear mixed models. Journal of the American Statistical Association, 88(421):9–25. https://doi.org/10.2307/2290687
 
+Vicente, G., Goicoa, T., Fernandez-Rasines, P., and Ugarte, M. D. (2020). Crime against women in india: unveiling spatial patterns and temporal trends of dowry deaths in the districts of Uttar Pradesh. Journal of the Royal Statistical Society: Series A (Statistics in Society), 183(2):655–679. https://doi.org/10.1111/rssa.12545
+
 Zadnik, V. and Reich, B. (2006). Analysis of the relationship between socioeconomic factors and stomach cancer incidence in slovenia. Neoplasma, 53(2):103-110.	 
 
-Vicente, G., Goicoa, T., Fernandez-Rasines, P., and Ugarte, M. D. (2020). Crime against women in india: unveiling spatial patterns and temporal trends of dowry deaths in the districts of Uttar Pradesh. Journal of the Royal Statistical Society: Series A (Statistics in Society), 183(2):655–679. https://doi.org/10.1111/rssa.12545
+
 
 
 
