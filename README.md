@@ -39,7 +39,7 @@ The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spati
   - **_Q.xi_**: spatial adjacency matrix
   - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
   
-_Slovenia data is obtained from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO). This dataset is also available in the [web page of James Hogdes](http://www.biostat.umn.edu/~hodges/RPLMBook/Datasets/10_Slovenian_stomach_cancer/Ex10.html)_.
+_Slovenia data set is available from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO). This dataset is also available from the [web page of James Hogdes](https://www.biostat.umn.edu/~hodges/RPLMBook/Datasets/Datasets.html)_.
 
 
 ### Lip cancer incidence data in Scotland during 1975-1980 [(Breslow and Clayton, 1993)](https://www.jstor.org/stable/2290687?origin=crossref#metadata_info_tab_contents)
@@ -68,7 +68,7 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
 R code to implement the procedures to alleviate spatial confounding described in the paper and reproduce the tables and figures of the paper has been included. 
 
-- [R/Real_data_analysis](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) folder contains the R code used in the real data analysis. The R code for dowry death data is presented, slight modifications included in the code as a comments should be done to fit the models to Slovenia and Scotland datasets.
+- [R/Real_data_analysis](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) folder contains the R code used in the real data analysis. The R code for the analyisis of dowry death data is presented. Slight modifications included in the code as comments should be done to fit the models to the Slovenia and the Scotland data.
  
 - [R/Simulation_Study_1](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_1) folder contains the R code used in Simulation Study 1. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=80,50 or 20) at the top of the code must be defined. It is important to run [Prepare_results_TGMRF.R](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/R/Simulation_study_1/Prepare_results_TGMRF.R) script before running the scripts to obtain the tables and figures. 
 
