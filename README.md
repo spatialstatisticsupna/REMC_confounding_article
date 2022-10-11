@@ -23,7 +23,6 @@ The [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatia
 
   - **_carto_**: SpatialPolygonDataFrame object with the cartography of the 70 districts (year 2001) of Uttar Pradesh
   - **_Q.xi_**: spatial adjacency matrix
-  - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
 
 
 ### Stomach cancer incidence data in Slovenia during the period 1995-2001 (Zadnik and Reich, 2006)
@@ -37,7 +36,7 @@ The [**Slovenia_stomach_cancer**](https://github.com/spatialstatisticsupna/Spati
     
   - **_coord_**: a matrix that contains the coordinates of the 192 areas of Slovenia
   - **_Q.xi_**: spatial adjacency matrix
-  - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
+  
   
 _Slovenia data set is available from the package RASCO of R [https://github.com/DouglasMesquita/RASCO](https://github.com/DouglasMesquita/RASCO). This dataset is also available from the [web page of James Hogdes](https://www.biostat.umn.edu/~hodges/RPLMBook/Datasets/Datasets.html)_.
 
@@ -53,7 +52,6 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
   - **_carto_**: SpatialPolygonDataFrame object with the cartography of the 56 districts of Scotland
   - **_Q.xi_**: spatial adjacency matrix
-  - **_Q.xi.TGMRF_**: spatial adjacency matrix for _tgmrf()_ function of TMGMRF package
 
 
 
