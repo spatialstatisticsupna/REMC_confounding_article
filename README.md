@@ -56,7 +56,7 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
 
 # Simulated data
-[Simulated_data](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/Simulated_data) folder contains a total of 18 .Rdata files (one file for each scenario and subscenario) used in Simulation Study 1 and Simulation Study 2. Each .Rdata file contains the same objects as [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) (**_Data_**, **_carto_**, **_Q.xi_**, **_Q.xi.TGMRF_**) but simulated covariate **_X2_** is added to **_Data_**. Moreover, each .Rdata contains the following objects as well:
+[Simulated_data](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/Simulated_data) folder contains a total of 18 .Rdata files (one file for each scenario and subscenario) used in Simulation Study 1 and Simulation Study 2. Each .Rdata file contains the same objects as [**Dowry_death_2001.Rdata**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/Data/Dowry_death_2001.Rdata) (**_Data_**, **_carto_**, **_Q.xi_**) but simulated covariate **_X2_** is added to **_Data_**. Moreover, each .Rdata contains the following objects as well:
 
 - **_log.risk_**: a vector that contains the simulated log risks
 - **_simu.O_**: a list with 100 simulated counts data sets
@@ -68,11 +68,11 @@ R code to implement the procedures to alleviate spatial confounding described in
 
 - [R/Real_data_analysis](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) folder contains the R code used in the real data analysis. The R code for the analyisis of dowry death data is presented. Slight modifications included in the code as comments should be done to fit the models to the Slovenian and the Scottish cancer data.
  
-- [R/Simulation_Study_1](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_1) folder contains the R code used in Simulation Study 1. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=80,50 or 20) at the top of the code must be defined. It is important to run [Prepare_results_TGMRF.R](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/R/Simulation_study_1/Prepare_results_TGMRF.R) script before running the scripts to obtain the tables and figures. 
+- [R/Simulation_Study_1](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_1) folder contains the R code used in Simulation Study 1. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=80,50 or 20) at the top of the code must be defined.
 
-- [R/Simulation_Study_2](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_2) folder contains the R code used in Simulation Study 2. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=80,50 or 20) at the top of the code must be defined.  It is important to run [Prepare_results_TGMRF.R](https://github.com/spatialstatisticsupna/Spatial_confounding_article/blob/main/R/Simulation_study_2/Prepare_results_TGMRF.R) script before running the scripts to obtain the tables and figures. 
+- [R/Simulation_Study_2](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_2) folder contains the R code used in Simulation Study 2. Before running the models, the options _Scenario_ (scenario 1, 2 or 3) and _Subscenario_ (cor=80,50 or 20) at the top of the code must be defined. 
 
-Computations were run using R-4.0.4, INLA version 21.02.23, mgcv version 1.8-40 and TMGMRF version 0.12.2.
+Computations were run using R-4.0.4, INLA version 21.02.23, mgcv version 1.8-40.
 
 # Acknowledgements
 This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.13039/501100011033.
