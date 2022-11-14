@@ -96,7 +96,6 @@ R code to implement the procedures to alleviate spatial confounding described in
   - [SimuStudy2_SpatPlusP2.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/SimuStudy2_SpatPlusP2.R): R script to fit SpatPlusP2 model to the 100 simulated datasets.
   - [SimuStudy2_SpatPlusTP2.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/SimuStudy2_SpatPlusTP2.R): R script to fit SpatPlusTP2 model to the 100 simulated datasets.
   - [Table_9.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/Table_9.R): R code to reproduce Table 9 of the paper for each scenario and subscenario.
-  - [Figure3_A1_A2.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/Figure3_A1_A2.R): R code to reproduce Figure 3 of the paper and Figures A1, A2 of the supplementary material.
   - [Figures_supplementary_A3_A4_A5.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/Figures_supplementary_A3_A4_A5.R): R code to reproduce Figures A3, A4 and A4 of the supplementary material for each scenario and subscenario.
 
 Computations were run using R-4.0.4, INLA version 21.02.23, mgcv version 1.8-40.
