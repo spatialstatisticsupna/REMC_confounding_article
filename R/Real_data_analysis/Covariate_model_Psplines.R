@@ -5,7 +5,7 @@
 ########################################
 
 p <- 3 	# Cubic B-splines
-q <- 10	# Number of internal intervals
+q <- 10	# Number of internal intervals (for Slovenia data we have used 27 intervals)
 
 
 ## Dowry death data 2001: marginal basis for longitude ##
