@@ -25,7 +25,7 @@ coord.df <-  as.data.frame(coord)
 names(coord.df)<-c("x","y")
 
 
-CovariateTP <- gam(Data$X1~1+s(x,y,k=17, fx=TRUE, m=2), weights=diag(W), data=coord.df)$fitted.values
+CovariateTP <- gam(Data$X1~1+s(x,y,k=17, fx=TRUE, m=2), weights=diag(W), data=coord.df)$fitted.values  # for Slovenia data k=30 is chosen
 X1.ResTP <- Data$X1 - CovariateTP
 Data$X1.ResTP <- as.vector(scale(X1.ResTP))
 
