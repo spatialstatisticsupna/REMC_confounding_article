@@ -106,6 +106,8 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 ![image](https://github.com/spatialstatisticsupna/Comparing-R-INLA-and-NIMBLE/blob/main/micin-aei.jpg)
  
 # References
+[Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_. DOI: 10.1007/s13163-022-00449-8]
+	
 
 Breslow, N. E. and Clayton, D. G. (1993). Approximate inference in generalized linear mixed models. Journal of the American Statistical Association, 88(421):9–25. https://doi.org/10.2307/2290687
 
