@@ -106,14 +106,10 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 ![image](https://github.com/spatialstatisticsupna/Comparing-R-INLA-and-NIMBLE/blob/main/micin-aei.jpg)
  
 # References
-Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_. DOI: 10.1007/s13163-022-00449-8
+Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_, in press, DOI: 10.1007/s13163-022-00449-8
 	
 
-Breslow, N. E. and Clayton, D. G. (1993). Approximate inference in generalized linear mixed models. _Journal of the American Statistical Association_, 88(421):9–25. https://doi.org/10.2307/2290687
-
-Vicente, G., Goicoa, T., Fernandez-Rasines, P., and Ugarte, M. D. (2020). Crime against women in india: unveiling spatial patterns and temporal trends of dowry deaths in the districts of Uttar Pradesh. _Journal of the Royal Statistical Society: Series A (Statistics in Society)_, 183(2):655–679. https://doi.org/10.1111/rssa.12545
-
-Zadnik, V. and Reich, B. (2006). Analysis of the relationship between socioeconomic factors and stomach cancer incidence in slovenia. _Neoplasma_, 53(2):103-110.	 
+ 
 
 
 
