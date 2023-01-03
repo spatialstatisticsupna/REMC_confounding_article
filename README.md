@@ -1,5 +1,5 @@
 # Evaluating recent methods to overcome spatial confounding
-This repository contains the R code to implement the methods described in the paper entitled "Evaluating recent methods to overcome spatial confounding" as well as the R code to create the figures and tables presented in the paper.
+This repository contains the R code to implement the methods described in the paper entitled "Evaluating recent methods to overcome spatial confounding" [(Urdangarin et al., 2022)](https://link.springer.com/article/10.1007/s13163-022-00449-8) as well as the R code to create the figures and tables presented in the paper.
 
 
 ## Table of contents
@@ -106,7 +106,7 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 ![image](https://github.com/spatialstatisticsupna/Comparing-R-INLA-and-NIMBLE/blob/main/micin-aei.jpg)
  
 # References
-Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_, in press, DOI: 10.1007/s13163-022-00449-8.
+[Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_, in press, DOI: 10.1007/s13163-022-00449-8.](https://link.springer.com/article/10.1007/s13163-022-00449-8)
 	
 
  
