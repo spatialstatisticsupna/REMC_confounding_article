@@ -1,5 +1,5 @@
 # Evaluating recent methods to overcome spatial confounding
-This repository contains the R code to implement the methods described in the paper entitled "Evaluating recent methods to overcome spatial confounding" [(Urdangarin et al., 2022)](https://link.springer.com/article/10.1007/s13163-022-00449-8) as well as the R code to create the figures and tables presented in the paper.
+This repository contains the R code to implement the methods described in the paper entitled "Evaluating recent methods to overcome spatial confounding" [(Urdangarin et al., 2023)](https://link.springer.com/article/10.1007/s13163-022-00449-8) as well as the R code to create the figures and tables presented in the paper.
 
 
 ## Table of contents
