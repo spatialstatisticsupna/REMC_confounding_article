@@ -106,7 +106,7 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 ![image](https://github.com/spatialstatisticsupna/Comparing-R-INLA-and-NIMBLE/blob/main/micin-aei.jpg)
  
 # References
-[Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2022). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_, in press, DOI: 10.1007/s13163-022-00449-8.](https://link.springer.com/article/10.1007/s13163-022-00449-8)
+[Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2023). Evaluating recent methods to overcome spatial confounding. _Revista Matemática Complutense_ **36**, 333-360. DOI: 10.1007/s13163-022-00449-8.](https://link.springer.com/article/10.1007/s13163-022-00449-8)
 	
 
  
