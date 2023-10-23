@@ -66,7 +66,7 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 
 R code to implement the procedures to alleviate spatial confounding described in the paper and to reproduce the tables and figures of the paper has been included. 
 
-- [**R/Real_data_analysis**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) folder contains the R code used in the real data analysis. The principal file to fit the models is [Null_Spatial_RSR_SpatPlus_models.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Real_data_analysis/Null_Spatial_RSR_SpatPlus_models.R).
+- [**R/Real_data_analysis**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Real_data_analysis) folder contains the R code used in the real data analysis. The principal file to fit the models is Null_Spatial_RSR_SpatPlus_models.R.
   - [Figure1.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Real_data_analysis/Figure1.R): R script to reproduce Figure 1 of the paper.
   - [Covariate_model_eigenvectors.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Real_data_analysis/Covariate_model_eigenvectors.R): R script to fit the covariate model based on the eigenvectors of the spatial precision matrix to remove the spatial dependence from the covariate before fitting the spatial+ model.
   - [Covariate_model_Psplines.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Real_data_analysis/Covariate_model_Psplines.R): R script to fit the covariate model based on P-splines to remove the spatial dependence from the covariate before fitting the spatial+ model. 
