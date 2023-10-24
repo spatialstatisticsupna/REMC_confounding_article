@@ -9,7 +9,7 @@ This repository contains the R code to implement the methods described in the pa
 -   [R code](#R-code)
 -   [References](#References)
 
-# Data {#data}
+# Data
 
 ### Dowry deaths data in Uttar Pradesh in 2001 [(Vicente et al., 2020)](https://rss.onlinelibrary.wiley.com/doi/10.1111/rssa.12545)
 
@@ -76,7 +76,7 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 -   ***log.risk***: a vector that contains the simulated log risks
 -   ***simu.O***: a list with 100 simulated counts data sets
 
-# R code {#r-code}
+# R code
 
 R code to implement the procedures to alleviate spatial confounding described in the paper and to reproduce the tables and figures of the paper has been included.
 
