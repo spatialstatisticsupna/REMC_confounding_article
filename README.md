@@ -5,7 +5,7 @@ This repository contains the R code to implement the methods described in the pa
 ## Table of contents
 
 -   [Data](#Data)
--   [Simulated data](#SimulatedData)
+-   [Simulated data](#Simulated-data)
 -   [R code](#R-code)
 -   [References](#References)
 
@@ -128,6 +128,6 @@ This work has been supported by Project PID2020-113125RB-I00/ MCIN/ AEI/ 10.1303
 
 ![image](https://github.com/spatialstatisticsupna/Comparing-R-INLA-and-NIMBLE/blob/main/micin-aei.jpg)
 
-# References {#references}
+# References
 
 [Urdangarin, A., Goicoa, T. and Ugarte, M.D. (2023). Evaluating recent methods to overcome spatial confounding. *Revista Matemática Complutense* **36**, 333-360. DOI: 10.1007/s13163-022-00449-8.](https://link.springer.com/article/10.1007/s13163-022-00449-8)
