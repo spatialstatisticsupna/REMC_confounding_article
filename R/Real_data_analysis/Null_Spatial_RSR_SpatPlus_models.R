@@ -24,23 +24,21 @@ dataset <- "Dowry"
 ## Dowry death data 2001 ##
 if(dataset=="Dowry") {
   load("../../Data/Dowry_death_2001.Rdata")  # O=observed counts, E=expected counts, X1=standardized sex ratio
-  N <- nrow(Data)
 }
 
 ## Slovenia stomach cancer data ##
 if(dataset=="Slovenia") {
   load("../../Data/Slovenia_stomach_cancer.Rdata")  # X=standardized socioeconomic indicator
-  N <- nrow(Data)
   colnames(Data)[colnames(Data)=="X"] <- "X1"
 }
 
 ## Scotland lip cancer data ##
 if(dataset=="Scotland") {
   load("../../Data/Scotland_lip_cancer.Rdata")  # AFF=standardized AFF
-  N <- nrow(Data)
   colnames(Data)[colnames(Data)=="AFF"] <- "X1"
 }
 
+N <- nrow(Data)
 
 
 ###############################
@@ -55,8 +53,6 @@ compute.patterns <- FALSE  ## Set compute.patterns=FALSE if posterior patterns a
 strategy <- "laplace"
 
 
-
-
 ##############
 # NULL MODEL #
 ##############
@@ -67,8 +63,6 @@ Null <- inla(f.Null, family="poisson", data=Data, E=E,
              control.predictor=list(compute=TRUE, cdf=c(log(1))),
              control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
              control.inla=list(strategy=strategy))
-
-
 
 
 #################
@@ -84,15 +78,12 @@ Spat <- inla(f.Spat, family="poisson", data=Data, E=E,
              control.inla=list(strategy=strategy))
 
 
-
-
 #############
 # RSR MODEL #
 #############
 
 ones.N <- rep(1, N)
 Beta.df <- as.matrix(Data[, "X1"])
-
 
 W <- diag(Spat$summary.fitted.values$mode*Data$E)
 W.sqrt <- diag(sqrt(diag(W)))
@@ -102,15 +93,12 @@ X <- cbind(ones.N, as.matrix(Beta.df))
 P <- W.sqrt%*%X%*%solve(t(X)%*%W%*%X)%*%t(X)%*%W.sqrt
 Pc <- diag(N)-P
 
-
 eigen.Pc <- eigen(Pc)
 L <- eigen.Pc$vectors[,eigen.Pc$values>1e-12]
-
 
 eigen.Qs <- eigen(Q.xi)
 Us <- eigen.Qs$vectors[,eigen.Qs$values>1e-12]
 Ds <- diag(eigen.Qs$values[eigen.Qs$values>1e-12])
-
 
 M <- W.sqrt.inv%*%L%*%t(L)%*%W.sqrt
 Z.area <- M%*%diag(N)
@@ -121,10 +109,8 @@ Data.RSR <- list(O=Data$O, E=Data$E,
                  beta1=c(NA,1,rep(NA,N)),
                  ID.area=c(rep(NA,1+1),1:N))
 
-
 f.RSR <- O ~ -1 + Intercept + beta1 + f(ID.area, model="besag", graph=Q.xi, 
                                         rankdef=1, constr=TRUE, hyper=list(prec=list(prior=sdunif)))
-
 
 Apredictor <- cbind(rep(1,N), Beta.df, Z.area)
 
@@ -136,14 +122,11 @@ RSR <- inla(f.RSR, family="poisson", data=Data.RSR, E=E,
             control.fixed=list(prec=0))
 
 
-
-
 #####################################################
 # SPATIAL+ MODEL: Covariate model with eigenvectors #
 #####################################################
 
 source("Covariate_model_eigenvectors.R")
-
 
 
 ###################
@@ -153,13 +136,10 @@ source("Covariate_model_eigenvectors.R")
 f.SpatPlus5 <- O ~ 1 + X1.Res5 + f(ID.area, model="besag", graph=Q.xi, constr=TRUE, 
                                    scale.model=FALSE, hyper=list(prec=list(prior=sdunif))) 
 
-
 SpatPlus5 <- inla(f.SpatPlus5, family="poisson", data=Data, E=E,
                   control.predictor=list(compute=TRUE, cdf=c(log(1))),
                   control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                   control.inla=list(strategy=strategy))
-
-
 
 
 ####################
@@ -169,13 +149,10 @@ SpatPlus5 <- inla(f.SpatPlus5, family="poisson", data=Data, E=E,
 f.SpatPlus10 <- O ~ 1 + X1.Res10 + f(ID.area, model="besag", graph=Q.xi, constr=TRUE, 
                                    scale.model=FALSE, hyper=list(prec=list(prior=sdunif))) 
 
-
 SpatPlus10 <- inla(f.SpatPlus10, family="poisson", data=Data, E=E,
                   control.predictor=list(compute=TRUE, cdf=c(log(1))),
                   control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                   control.inla=list(strategy=strategy))
-
-
 
 
 ####################
@@ -185,13 +162,10 @@ SpatPlus10 <- inla(f.SpatPlus10, family="poisson", data=Data, E=E,
 f.SpatPlus15 <- O ~ 1 + X1.Res15 + f(ID.area, model="besag", graph=Q.xi, constr=TRUE, 
                                      scale.model=FALSE, hyper=list(prec=list(prior=sdunif))) 
 
-
 SpatPlus15 <- inla(f.SpatPlus15, family="poisson", data=Data, E=E,
                    control.predictor=list(compute=TRUE, cdf=c(log(1))),
                    control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                    control.inla=list(strategy=strategy))
-
-
 
 
 ####################
@@ -201,16 +175,12 @@ SpatPlus15 <- inla(f.SpatPlus15, family="poisson", data=Data, E=E,
 if(dataset %in% c("Dowry", "Slovenia")) {
   f.SpatPlus20 <- O ~ 1 + X1.Res20 + f(ID.area, model="besag", graph=Q.xi, constr=TRUE, 
                                        scale.model=FALSE, hyper=list(prec=list(prior=sdunif))) 
-  
-  
+
   SpatPlus20 <- inla(f.SpatPlus20, family="poisson", data=Data, E=E,
                      control.predictor=list(compute=TRUE, cdf=c(log(1))),
                      control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                      control.inla=list(strategy=strategy))
 }
-
-
-
 
 
 ####################
@@ -228,7 +198,6 @@ if(dataset=="Slovenia") {
 }
 
 
-
 ####################
 # SpatPlus40 MODEL #
 ####################
@@ -244,13 +213,11 @@ if(dataset=="Slovenia") {
 }
 
 
-
 ##################################################
 # SPATIAL+ MODEL: Covariate model with P-splines #
 ##################################################
 
 source("Covariate_model_Psplines.R")
-
 
 
 ####################
@@ -265,8 +232,6 @@ SpatPlusP1 <- inla(f.SpatPlusP1, family="poisson", data=Data, E=E,
                    control.predictor=list(compute=TRUE, cdf=c(log(1))),
                    control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                    control.inla=list(strategy=strategy))
-
-
 
 
 ####################
@@ -286,13 +251,10 @@ Data.splines2 <- list(O=Data$O, E=Data$E,
 
 Apredictor <- cbind(rep(1,N), Data$X1.ResP, Bs)
 
-
 SpatPlusP2 <- inla(f.SpatPlusP2, family="poisson", data=Data.splines2, E=E,
                    control.predictor=list(compute=TRUE, A=Apredictor),
                    control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                    control.inla=list(strategy=strategy, verbose=TRUE))
-
-
 
 
 ###################################################
@@ -300,7 +262,6 @@ SpatPlusP2 <- inla(f.SpatPlusP2, family="poisson", data=Data.splines2, E=E,
 ###################################################
 
 source("Covariate_model_TPsplines.R")
-
 
 
 #####################
@@ -317,8 +278,6 @@ SpatPlusTP1 <- inla(f.SpatPlusTP1, family="poisson", data=Data, E=E,
                     control.inla=list(strategy=strategy))
 
 
-
-
 #####################
 # SpatPlusTP2 MODEL #
 #####################
@@ -326,7 +285,6 @@ SpatPlusTP1 <- inla(f.SpatPlusTP1, family="poisson", data=Data, E=E,
 f.SpatPlusTP2 <- O ~ -1 + intercept + beta1 +
                      f(ID.area, model="generic3", Cmatrix=Cmat.s, constr=TRUE, diagonal=1e-6,
                        hyper=list(prec1=list(prior=sdunif), prec2=list(prior=sdunif)))
-
 
 Data.splines2 <- list(O=Data$O, E=Data$E,
                       X1.ResTP=Data$X1.ResTP,
@@ -336,13 +294,10 @@ Data.splines2 <- list(O=Data$O, E=Data$E,
 
 Apredictor <- cbind(rep(1,N), Data$X1.ResTP, Bs)
 
-
 SpatPlusTP2 <- inla(f.SpatPlusTP2, family="poisson", data=Data.splines2, E=E,
                     control.predictor=list(compute=TRUE, A=Apredictor),
                     control.compute=list(dic=TRUE, cpo=TRUE, waic=TRUE),
                     control.inla=list(strategy=strategy, verbose=TRUE))
-
-
 
 
 ############################################################################
@@ -385,8 +340,6 @@ Tab.beta1 <- do.call(rbind,lapply(Models, function(x) x$summary.fixed[2, c(1:3, 
 round(Tab.beta1,4)
 
 
-
-
 ####################
 # SAVE THE RESULTS #
 ####################
@@ -402,10 +355,3 @@ if(dataset=="Slovenia") {
 if(dataset=="Scotland") {
   save(Models, Tab.beta1, file="Results_Scotland_data.Rdata")
 }
-
-
-
-
-
-
-
