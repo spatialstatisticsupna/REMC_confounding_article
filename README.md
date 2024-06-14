@@ -76,6 +76,8 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 -   ***log.risk***: a vector that contains the simulated log risks
 -   ***simu.O***: a list with 100 simulated counts data sets
 
+The code used to simulate the data is available in [SimuStudy1_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy1_simulate_data.R) and [SimuStudy2_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy2_simulate_data.R).
+
 # R code
 
 R code to implement the procedures to alleviate spatial confounding described in the paper and to reproduce the tables and figures of the paper has been included.
