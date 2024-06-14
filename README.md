@@ -76,7 +76,7 @@ The [**Scotland_lip_cancer.Rdata**](https://github.com/spatialstatisticsupna/Spa
 -   ***log.risk***: a vector that contains the simulated log risks
 -   ***simu.O***: a list with 100 simulated counts data sets
 
-The code used to simulate the data is available in [SimuStudy1_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy1_simulate_data.R) and [SimuStudy2_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy2_simulate_data.R).
+The R code to simulate the data is available in [SimuStudy1_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy1_simulate_data.R) and [SimuStudy2_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy2_simulate_data.R).
 
 # R code
 
@@ -94,7 +94,7 @@ R code to implement the procedures to alleviate spatial confounding described in
 -   [**R/Simulation_Study_1**](https://github.com/spatialstatisticsupna/Spatial_confounding_article/tree/main/R/Simulation_study_1) folder contains the R code used in Simulation Study 1.
 
     Before running the models, the arguments `Scenario`(1, 2 or 3) and `Subscenario` (cor=80, 50 or 20) must be defined at the top of the code.
-
+    - [SimuStudy1_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy1_simulate_data.R): R code to simulate the data for Simulation study 1.
     -   [Figure2.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/Figure2.R): R code to reproduce Figure 2 of the paper.
     -   [SimuStudy1_Null.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy1_Null.R): R script to fit the null model to the 100 simulated datasets.
     -   [SimuStudy1_Spatial.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy1_Spatial.R): R script to fit the spatial model to the 100 simulated datasets.
