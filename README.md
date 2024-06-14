@@ -111,6 +111,7 @@ R code to implement the procedures to alleviate spatial confounding described in
 
     Before running the models, the arguments `Scenario`(1, 2 or 3) and `Subscenario` (cor=80, 50 or 20) must be defined at the top of the code.
 
+    - [SimuStudy2_simulate_data.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_1/SimuStudy2_simulate_data.R): R code to simulate the data for Simulation study 2.
     -   [SimuStudy2_Null.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/SimuStudy2_Null.R): R script to fit the null model to the 100 simulated datasets.
     -   [SimuStudy2_Spatial.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/SimuStudy2_Spatial.R): R script to fit the spatial model to the 100 simulated datasets.
     -   [SimuStudy2_RSR.R](https://github.com/spatialstatisticsupna/Simulation_confounding_article/blob/main/R/Simulation_study_2/SimuStudy2_RSR.R): R script to fit the RSR model to the 100 simulated datasets.
